@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+        <meta name="description" content=" Welcome !">
+        <link rel="stylesheet" href="in.css" />
+        <link rel="stylesheet" href="normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		
+		
+		#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+body
+{
+background-color: #fef9e7;
+
+}
+
+.green, .brown, .dimgray, .purple, {
+			width:auto;
+			margin-right:20px;
+			float:right;
+			margin-top: 14px;
+		}
+.maincont
+{
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.maincont
+{
+  width: 65%;
+  display: block;
+ float:left;
+}
+.rightcolumn
+{
+  
+  width:25%;
+  display:block;
+  float:left;
+}
+
+	
+		
+*
+{
+    box-sizing: border-box;
+}		
+
+
+	
+		.main-nav
+{
+    background-color:dimgray;
+    overflow : hidden;
+}
+
+
+.main-nav a
+{
+    color:lavenderblush;
+    float: left;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-style: italic;
+    
+
+}
+.main-nav a:hover
+{
+    background-color: rgb(179, 243, 195);
+    color: rgb(24, 26, 25);
+    
+}
+
+.org-navbar
+{
+    overflow: hidden;
+    background-color: goldenrod;
+    
+}
+.org-navbar h2
+{
+    color: honeydew;
+    margin: 5px;
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+    font-size: 100px;
+}
+		.signin {
+			margin-left: 260px;
+		}
+		.signin, .signup {
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			background-color: #fef9e7;
+			color: brown;
+		}
+		.signin:hover, .signup:hover {
+		cursor:pointer;
+		background-color:green;
+		color: #fef9e7;
+		}
+		body {
+		font-family: "Comic Sans MS", cursive, sans-serif ;
+			font-family: "Inconsolata", sans-serif;
+			background-color: #fef9e7;
+		}
+	
+		h2 {
+			text-align: center;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 50px;
+			font-weight: normal;
+			
+		}
+		.the {
+
+		}
+		
+		.online_zoo {
+
+		}
+		.the, .online_zoo {
+		
+		}
+		
+		
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button {
+  background-color:	green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 12px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.loli {
+  width: 10%;
+  border-radius: 50%;
+  border: 8px solid #555;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+		
+		
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.main-nav a
+{
+    color:lavenderblush;
+    float: left;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-style: italic;
+    
+
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+     /* navbar*/
+ nav{
+  background: grey;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding:0 60px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #7C9864;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1326px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 1326px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+ .checkbtn{
+font-size: s30px;
+color: white;
+float: right; 
+line- height: 80 px;
+margin-right : 40px;
+cursor : pointer;
+}
+
+@media (max-width: 1326px) {
+.checkbtn{
+display:block;
+}
+} 
+
+/*slider*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+		</style>
+		<title> Online Zoo </title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="shortcut icon" href="zoo.png" type="image/png" />
+	</head>
+
+<body>
+                          <!-- navbar-->
+	<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Online ZOO </label> 
+       <ul class="nav-area">
+            <li> <a class= "zoo" href="#zoo">Zoo</a> </li>
+          
+         <li> <a  class = "org"  href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/org%20(1).html">Organizations</a></li>
+           <li> <a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/Nature%20Reserves%20(1).html">Nature Reserve</a>  </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/contactus%20(1).html">Contact Us</a> </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/aboutus.html">About Us</a></li>
+             <li><button class="signin"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> sign in</button></li>
+           
+    </ul> 
+  </nav>
+      <!--iageslider-->		
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="coverzoo1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="coverzoo.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="1000zoo.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+  
+	
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="POST">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="loli.png" alt="loli" class="loli">
+    </div>
+
+    <div class="container">
+      
+       <center><label for="uname"><b>Welcome cookie you have to sign in to
+be able to add comments, like, share
+your favorite zoo items</b></label></center>
+
+<form action="" method="Post" id="Login" > 
+<center><label for="uname"><b>Username</b></label></center>
+      <input  id="us1" type="text" id="EnterUserName" placeholder="Enter Username" name="uname" required>
+
+      <center><label for="psw"><b>Password</b></label></center>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+      <button id="lo" type="submit">Login</button>
+</form>
+       
+	   <div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+    </div>
+	
+
+    <div class="container" style="background-color:#f1f1f1">
+   <center> <label for="uname"><b>If you don’t have an account yet, just
+sign up now</b></label></center>
+      <button type="button"  onclick="document.getElementById('id02').style.display='block'
+      ;document.getElementById('id01').style.display='none'" 
+class="cancelbtn">sign up</button>
+    </div>
+  </form>
+</div>
+
+
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none';
+      " class="close" title="Close Modal">&times;</span>
+      <img src="loli.png" alt="loli" class="loli">
+    </div>
+ <div class="container">
+      <center><h2>Sign Up</h2></center>
+     <center> <p>Please fill in this form to create an account.</p></center>
+      <hr>
+     <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw1"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw1" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+     
+
+           
+
+        <button type="button" class="button"
+		onclick="document.getElementById('id03').style.display='block'
+      ;document.getElementById('id02').style.display='none'" >Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+<div id="id03" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none';
+      " class="close" title="Close Modal">&times;</span>
+      <img src="loli.png" alt="loli" class="loli">
+    </div>
+ <div class="container">
+    
+     <center> <h2 style="color:green;" >Sign up completed
+successfully</h2></center>
+      
+    
+      
+    
+     
+
+            <div class="clearfix">
+
+        <button type="button" class="button"
+		
+		onclick="document.getElementById('id03').style.display='none'" >Finish</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="maincont" style="width: 65%;display: block; float:left;  padding: 10px;margin: 10px;background-color: white;">
+		<center><h1 id="koko1" style="font-weight: 10px; background-color:  #636e72; padding: 10px;margin: 10px;">Mammal</h1></center>
+		<div class="s.cont">
+		<p>
+		<center><h3>The Elephant</h2></center>
+		<center><img src="eleph.jpg"></center>
+		<center><h4>The elephant is a mammal that is the largest of the terrestrial animals currently in existence. It is a herbivore, with a gestation period of 645 days, and is divided into two types: the African elephant and the Asian elephant. The African elephant is characterized by large ears and concave backs, while the Asian elephant is characterized by small ears and convex or flat backs. Elephants include extinct species also such as mammoths and mastics.
+Elephants use their long proboscis for many purposes and their incisors grow into tusks and use them as tools to move things, dig and as a weapon, as well as the elephants' flapping of their ears helps them control the change in their body temperature, and they communicate through vision, touch and sound.
+Elephants live in different environments, for example savannahs, forests, deserts and swamps, and prefer to stay near water.
+One of the dangers that threaten the Asian elephant is extinction due to the ivory trade.</h4></center>
+<br>
+<br>
+
+<center><h3>The Bat</h2></center>
+		<center><img src="bat.jpg"></center>
+		<center><h4>The bat is the only mammal that can fly, and it is active at night and sleeps during the day. Bats are found in different environments, whether in hot or cold regions, and because of their ability to fly long distances, they are also found on isolated islands in the Indian and Pacific Oceans, and they prefer hot areas due to the abundance of insects in them. There are many types of bats, and they are generally divided into two parts:
+<br>1- Large bats “Megachiroptera”, known as fruiting bats, are found in tropical regions of Africa, Australia and India.<br>
+2- Small bats" Microchiroptera", called insect bats, and they eat various foods, but they depend mainly on insects for their food.
+Bats sleep with their hind legs and head down, and most of their species live in colonies that contain thousands to collect their waste beneath them, and this waste is used as a sky to fertilize crops and the presence of nitrogenous substances in it.
+</h4></center>
+<br>
+<br>
+
+
+
+
+<center><h3>The Chimpanzee </h2></center>
+		<center><img src="cham.jpg"></center>
+		<center><h4>Chimpanzee is a mammal that lives in Africa and is classified as one of the most intelligent animals. It is a large and strong monkey. The adult length ranges from 130 cm to 160 cm and its weight ranges from 30 kg to 60 kg. In spite of this, the legs of the chimpanzee are relatively short, its nose is relatively small, and it has deep eyes, and the shape of its eyebrows is striking.
+Chimpanzees feed on what they find in their environment, eating leaves, fruits, nuts, honey, eggs, tree bark, sparrows, and small mammals and hunting small insects.
+Chimpanzees live in forests that are spread by water bodies in central and western Africa, in countries such as Senegal and through Congo-Kinshasa on the northern bank of the Congo River, as well as in Tanzania and Uganda, and chimpanzees live in open forests with large trees and abundant rainfall. Chimpanzees can also be found in mountainous areas full of trees or grass.
+</h4></center>
+<br>
+<br>
+
+
+<center><h3>The Lion </h2></center>
+		<center><img src="lion.jpg"></center>
+		<center><h4>The lion is a major predator of the mammals of the feline family, and it is the second largest feline in the world after the tiger, with a large mass of males exceeding 250 kg.
+Most of the remaining wild lions today live in sub-Saharan Africa, and one small endangered population still lives in Asia, in the state of Gujarat in northwestern India. Lions usually inhabit savannas and grasslands, and they may be found in crusty woodlands and forests at times.
+A male lion has around its neck, but a female lion does not.
+</h4></center>
+<br>
+<br>
+
+
+
+
+<center><h3>The Panthera  </h2></center>
+		<center><img src="tot.jpg"></center>
+		<center><h4>The Panthera tiger is a huge carnivorous mammal of the feline family and is the largest member of the family, with dark vertical stripes on the orange-brown fur and lighter undersides.
+Tigers inhabit forests or grasslands where their striped fur helps them to camouflage considerably and thus hunt prey that are usually more agile and faster than them. Tigers like to go into the water constantly on hot days.
+The Panthera tiger is endemic to most of eastern and southern Asia. It is considered a major predator. The Panthera tiger’s length reaches 4 meters, including the head, body and tail, and weighs up to 300 kg.
+The Panthera tiger's original home stretched from Mesopotamia and the Caucasus across most of southern and eastern Asia, and the tiger ranged widely from eastern Anatolia in the west to the Amur River basin, and in the south from the foothills of the Himalayas to Bali in the Sunda Islands. However, it has now shrunk very much.
+</h4></center>
+<br>
+<br>
+
+
+
+
+<center><h3>The tiger  </h2></center>
+		<center><img src="tiger.jpg"></center>
+		<center><h4>The tiger is a mammal, one of the species of the feline family and the smallest of the four big cats. Tigers are spread in sub-Saharan Africa, and some areas in southern and eastern Asia, where there are fragmented populations in Pakistan, India, Indonesia, Malaysia, China, and southern Arabia, and their home was In the past, it includes all countries extending from the Korean peninsula to South Africa, that is, the regions of East, South, Central Asia, the Middle East, Turkey, and all parts of Africa.
+The tiger is distinguished by its opportunistic hunting habits and its ability to adapt to different forms of climates and dwellings, in addition to its ability to move for a distance of 58 km per hour. Tigers feed on any type of animal they can catch, as their prey ranges from the size of beetles to zebras.
+
+</h4></center>
+<br>
+<br>
+
+
+
+<center><h3>The cheetah  </h2></center>
+		<center><img src="che.jpg"></center>
+		<center><h4>The cheetah is a mammal and it is a unique species of the feline family, it is considered the fastest animal on the face of the earth, where the speed of the cheetah ranges between 112 and 120 km per hour, and yet it is slender and is unable to fight larger predators and larger prey. .
+Today, cheetahs live scattered with their major populations in sub-Saharan Africa, and some lives in isolated enclaves in North Africa, Iran and Pakistan. The largest concentration of cheetahs in the world is in Namibia, in southwestern Africa.
+
+</h4></center>
+<br>
+<br>
+
+
+
+<center><h3>The fox  </h2></center>
+		<center><img src="fox.jpg"></center>
+		<center><h4>The fox is a mammal of the Canidae family and includes about 27 species, most foxes live about two or three years in the wild, but they may last up to 10 years or more in captivity. Most of the families are the size of domesticated cats, as foxes are the smallest members of the Canidae family.
+Its distinctive features include a delicate snout and bushy tail, and foxes are solitary animals, which are opportunistic predators that eat a variety of foods, such as rodents in particular, as well as grasshoppers, fruits and grapes.
+
+</h4></center>
+<br>
+<br>
+
+
+
+<center><h3>The Ailuropoda melanoleuca </h2></center>
+		<center><img src="banda.jpg"></center>
+		<center><h4>Ailuropoda melanoleuca is a huge animal of the bear family that is native to south-central and southwestern China. They are distinguished by dark circles around their eyes, ears and round body, and they are also famous for being bears that have thick fur that protects them from cold. The males are larger than the females and weigh about 110 kg, while the females weigh about 95 kg.
+It is an endangered species and is classified as carnivorous, but approximately 99% of its meals consist of bamboo. it also eats honey, eggs, fish, potatoes, oranges, and bananas.
+
+</h4></center>
+<br>
+<br>
+
+
+<center><h3>The Gazelle </h2></center>
+		<center><img src="gaz.jpg" width="500"></center>
+		<center><h4>Gazelle is a mammal found mostly in deserts, grasslands and savannas of Africa. Also in southwest and central Asia and the Indian subcontinent. It tends to live in flocks and feeds on weeds. It is a relatively small animal, with a height of 60-110 cm.
+Gazelles are known as fast animals. Some of them are able to run at speeds of up to 100 km / h.
+There are more than 30 species of Gazelles that live in the vast areas of North and East Africa and Asia. Some Gazelles live in the mountains, but most of them live in flat sandy lands.
+Gazelle have large, black eyes, and males and females have smooth black horns. Including her two horns gradient rings around them. . Dear has two long, slender, and pointed ears and short tail And his hair is short and soft. The back of Thomson's gazelle is light brown in color, with dark brown stripes on the loin. The abdomen is a pure white color.
+
+</h4></center>
+<br>
+<br>
+
+
+
+<center><h3>The Balaenoptera musculus  </h2></center>
+		<center><img src="ww.jpg"></center>
+		<center><h4>Balaenoptera musculus is a marine mammal belonging to the order of cetaceans and is the largest animal ever known, with a length of 30 meters and a weight of 170 tons.
+The body of the blue whale is long and slender, and it is colored in several gradient colors, it is bluish gray at the back and lighter in color on the underside.
+
+Balaenoptera musculus has five different subspecies: musculus which lives in the North Atlantic and North Pacific Oceans, intermedia, which lives in the Antarctic Ocean, brocade, also known as the pygmy blue whale, which lives in the Indian Ocean and the South Pacific Ocean, and a blue whale in the northern Indian Ocean. Indica, which lives in the northern Indian Ocean, and the Chilensis blue whale, which lives off the coast of Chile and the southeastern Pacific Ocean.
+Blue whales' diet consists of small crustaceans known as eicosanes.
+
+</h4></center>
+<br>
+<br>
+
+
+		</p>
+          
+        </div>
+		
+	
+		<p><center><h2 id="koko2" style="font-weight: 20px; background-color:  #636e72; padding: 10px;margin: 10px;">Reptiles</h2></center>
+		<center><h3>crocodil </h2></center>
+		<center><img src="11.jpg"></center>
+		<center><h4>The Nile crocodile (Crocodylus niloticus) is a large crocodilian native to freshwater habitats in Africa,
+<br>
+ where it is present in 26 countries. Due to its widespread occurrence and stable population trend, 
+ <br>
+ it has been listed as Least Concern on the IUCN Red List since 1996.[1] It is widely distributed throughout sub-Saharan Africa,
+<br> 
+ occurring mostly in the central, eastern, and southern regions of the continent, and lives in different types of aquatic environments
+ <br>
+ such as lakes, rivers, swamps, and marshlands.[2] Although capable of living in saline environments, 
+ <br>
+ this species is rarely found in saltwater, but occasionally inhabits deltas and brackish lakes.
+ <br>
+ The range of this species once stretched northward throughout the Nile, as far north as the Nile delta. 
+ <br>
+ On average, the adult male Nile crocodile is between 3.5 and 5 m (11.5 and 16.4 ft) in length and weighs 225 to 750 kg 
+ <br>
+ (500 to 1,650 lb).
+ <br>
+ [3][4][5] However, specimens exceeding 6.1 m (20 ft) in length and weighing up to 1,089 kg (2,400 lb) have been recorded.
+ <br>
+ It is the largest freshwater predator in Africa, and may be considered the second-largest extant reptile in the world,
+ <br>
+ after the saltwater crocodile (Crocodylus porosus).[6][7] Sexual dimorphism is prevalent, and females are usually about 30% smaller
+ <br>
+ than males. They have thick, scaly, heavily armoured skin
+</p> 
+
+</h4></center>
+<br>
+<br>
+
+
+
+		<center><h3>turtile </h2></center>
+		<center><img src="222.jpg"  width="500"></center>
+		<center><h4>Turtles are reptiles of the order Testudines characterized by a special bony or cartilaginous shell developed from their ribs and 
+<br>
+acting as a shield.[3] "Turtle" may refer to the order as a whole (American English) or to fresh-water and sea-dwelling testudines 
+<br>
+(British English).[4] The order Testudines includes both extant (living) and extinct species. The earliest known members of this group
+<br>
+ date from the Middle Jurassic,[1] making turtles one of the oldest reptile groups and a more ancient group than snakes or crocodilians.
+ <br>
+ Of the 356 known species[2] alive today, some are highly endangered
+</h4></center>
+<br>
+<br>
+
+
+
+		<center><h3>lizard </h2></center>
+		<center><img src="33.jpg" width="250"></center>
+		<center><h4>Lizards are a widespread group of squamate reptiles, with over 6,000 species,[1] ranging across all continents except Antarctica,
+ <br>
+ as well as most oceanic island chains. The group is paraphyletic as it excludes the snakes and Amphisbaenia; some lizards are more
+ <br>
+ closely related to these two excluded groups than they are to other lizards. Lizards range in size from chameleons and geckos
+ <br>
+  a few centimeters long to the 3 meter long Komodo dragon.
+ <br>
+Most lizards are quadrupedal, running with a strong side-to-side motion. Others are legless, and have long snake-like bodies. 
+<br>
+Some such as the forest-dwelling Draco lizards are able to glide. They are often territorial, the males fighting off other males
+<br>
+ and signalling, often with brightly colours, to attract mates and to intimidate rivals. Lizards are mainly carnivorous,
+ <br>
+ often being sit-and-wait predators; many smaller species eat insects, while the Komodo eats mammals as big as water buffalo.
+ <br>
+Lizards make use of a variety of antipredator adaptations, including venom, camouflage, reflex bleeding, and the ability to 
+<br>
+sacrifice and regrow their tails.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+		<center><h3>snakes </h2></center>
+		<center><img src="44.jpg"  width="500" ></center>
+		<center><h4>Snakes are elongated, legless, carnivorous reptiles of the suborder Serpentes.[2] Like all other squamates, snakes are ectothermic,
+<br>
+ amniote vertebrates covered in overlapping scales. Many species of snakes have skulls with several more joints than their lizard
+<br>
+ ancestors, enabling them to swallow prey much larger than their heads with their highly mobile jaws. To accommodate their narrow
+ <br>
+ bodies, snakes' paired organs (such as kidneys) appear one in front of the other instead of side by side, and most have only one
+ <br>
+ functional lung. Some species retain a pelvic girdle with a pair of vestigial claws on either side of the cloaca. Lizards have
+ <br>
+ evolved elongate bodies without limbs or with greatly reduced limbs about twenty-five times independently via convergent evolution,
+ <br>
+ leading to many lineages of legless lizards.[3] Legless lizards resemble snakes, but several common groups of legless lizards have
+ <br>
+ eyelids and external ears, which snakes lack, although this rule is not universal (see Amphisbaenia, Dibamidae, and Pygopodidae
+ <br>
+ Living snakes are found on every continent except Antarctica, and on most smaller land masses; exceptions include some large islands,
+ <br>
+ such as Ireland, Iceland, Greenland, the Hawaiian archipelago, and the islands of New Zealand, and many small islands of the Atlantic
+ <br>
+ and central Pacific oceans.[4] Additionally, sea snakes are widespread throughout the Indian and Pacific Oceans. More than 20 families
+ <br>
+  are currently recognized, comprising about 520 genera and about 3,600 species.[5][6] They range in size from the tiny, 10.4 cm 
+ <br>
+ (4.1 in)-long Barbados thread snake[7] to the reticulated python of 6.95 meters (22.8 ft) in length.[8] The fossil species Titanoboa
+ <br>
+ cerrejonensis was 12.8 meters (42 ft) long.[9] Snakes are thought to have evolved from either burrowing or aquatic lizards,
+ <br>
+ perhaps during the Jurassic period, with the earliest known fossils dating to between 143 and 167 Ma ago.[10] The diversity of modern
+ <br>
+ snakes appeared during the Paleocene epoch (c 66 to 56 Ma ago, after the Cretaceous–Paleogene extinction event).
+<br> 
+ The oldest preserved descriptions of snakes can be found in the Brooklyn Papyrus.
+ <br>
+Most species are nonvenomous and those that have venom use it primarily to kill and subdue prey rather than for self-defense.
+<br>
+ Some possess venom potent enough to cause painful injury or death to humans. Nonvenomous snakes either swallow prey alive or kill by
+ <br> 
+ constriction.
+
+</h4></center>
+<br>
+<br>
+
+
+
+		
+        </p>
+        <p><center><h2 id="koko3" style="font-weight: 20px; background-color:  #636e72; padding: 10px;margin: 10px;">Birds</h2></center>
+			
+			 
+			 
+			 
+			 <center><h3>The Struthio camelus  </h2></center>
+		<center><img src="na.jpg" width="500"></center>
+		<center><h4>Struthio camelus is a large bird that can’t fly and eats plants and sometimes reptiles. It also eats a lot of sand to help it digest food. . Its original homeland is Africa and the Middle East, but during the ages it was subjected to over-hunting operations that came to the numbers that were found in the deserts of the Middle East, and there is another similar type of ostrich found in southwestern Asia. Male ostriches weigh about 100-150 kg, and their height is about 2.4 meters. The Struthio camelus is characterized by the amazing strength of its legs, as it can sprint at a speed of up to 50 km / hour and maintain its speed for half an hour, and the ostrich is the only bird that has two toes on each foot.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+
+
+<center><h3>The Apteryx  </h2></center>
+		<center><img src="ki.jpg"></center>
+		<center><h4>Apteryx is a small, flightless bird that has relatively long legs and strong at the same time that helps it run fast. It lives in New Zealand, its size is close to the size of a hen. The soft feathers cover the body of the kiwi in a drop-down shape and it is the smallest living ostrich, and lays an egg very large for its size. It is the relatively largest of all birds in the world, as the male is one who lies on eggs for 80 days and is one of the endangered birds.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+
+
+
+<center><h3>The Penguin  </h2></center>
+		<center><img src="bing.jpg"></center>
+		<center><h4>Penguins are a non-flightless seabird that lives in the southern hemisphere, especially in Antarctica. Penguins have a high adaptation to life in the water, as their black and white feathers help them camouflage while their wings are turned into flippers to help them swim. Most species of penguins feed on krill, squid, fish and other marine life that they fish while diving underwater. These birds spend nearly half of their lives on land, while they spend the other half underwater.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+
+
+<center><h3>The Pelican  </h2></center>
+		<center><img src="yoyo.jpg"></center>
+		<center><h4>Pelican is a huge water bird characterized by the presence of a pocket under its beak and is found on all continents except Antarctica, and it uses its beak as a food store for these birds and to scoop fish out of the water.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+<center><h3>The Cormorant  </h2></center>
+		<center><img src="ga.jpg"></center>
+		<center><h4>Cormorant is a genus of birds belonging to the cormorants family of the order of pelicans that Chinese fishermen use in the Li Jiang Sea in China to catch fish due to the presence of a pouch in the neck of the bird used to store fish and so that the bird itself does not eat fish, fishermen resort to wrapping some strings around the neck of the bird.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+
+<center><h3>The flamingo  </h2></center>
+		<center><img src="fla.jpg"></center>
+		<center><h4>The flamingo is a pink bird belonging to the family Phoenicopteridae. While flying, it keeps its neck extended forward and maintains its balance with its long legs.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+<center><h3>The falcon  </h2></center>
+		<center><img src="hoho.jpg"></center>
+		<center><h4>The falcon is a bird of prey from the falconate family and is adept at hunting prey. Falcons are of many types, the most important of which is the free falcon, which is famous for its types (Aljroudi, Al Qatami and Al Hijazi), Shaheen falcon, kestrel, Shami Al Gir, Moroccan, Persian, Bukhari and Al Wakri. Falcons build their nests in rocky reefs, in trees, or on the ground, and generally build nests from sticks, but some falcons build nests from amalides (small branches), herbs and other plant materials.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+<center><h3>The parrot  </h2></center>
+		<center><img src="momo.jpg"></center>
+		<center><h4>The parrot is a bird known for its bright colors that range from green, red, blue and yellow, and it is an intelligent and sociable bird, an intelligent and social bird. Parrots are found in warm regions of the world, including India, Southeast Asia, West Africa, and one species - now extinct in the United States of America called (Carolina Brackett), which became extinct in the early twentieth century - in addition to Latin America, Australia and New Zealand. The parrot is characterized by its relatively large head, short neck, thick tongue, hooked claws that help it to attach to tree branches, and its durable steel beak capable of breaking the hard walnut crust, in addition to the ability of some types to imitate sounds, and the long life of some types.
+
+</h4></center>
+<br>
+<br>
+     
+        </p>
+		       <p><center><h2 id="koko4" style="font-weight: 20px; background-color:  #636e72; padding: 10px;margin: 10px;">Fishes</h2></center>
+					<center><h3>whale shark</h2></center>
+		<center><img src="qwer.jpeg" width="500"></center>
+		<center><h4>The whale shark (Rhincodon typus) is a slow-moving, filter-feeding carpet shark and the largest known extant fish species.
+<br> 
+The largest confirmed individual had a length of 18.8 m (62 ft).[8] The whale shark holds many records for size in the animal kingdom,
+<br> 
+most notably being by far the largest living nonmammalian vertebrate. It is the sole member of the genus Rhincodon and the only extant
+<br>  
+member of the family Rhincodontidae, which belongs to the subclass Elasmobranchii in the class Chondrichthyes. Before 1984 it was
+<br> 
+ classified as Rhiniodon into Rhinodontidae.</h4></center>
+<br>
+<br>
+
+
+
+		<center><h3>atlantic salmon   </h2></center>
+		<center><img src="salmon.jpeg" width="500"></center>
+		<center><h4>The Atlantic salmon (Salmo salar) is a species of ray-finned fish in the family Salmonidae which is the largest salmon and can grow 
+<br> 
+up to a meter in length. It is found in the northern Atlantic Ocean and in rivers that flow into this ocean. Most populations of
+<br>  
+this fish species are anadromous, hatching in streams and rivers but moving out to sea as they grow where they mature, after which
+<br> 
+ the adult fish seasonally move upstream again to spawn.[3] When the mature fish re-enter rivers to spawn, they change in colour and
+<br>  
+ appearance. Some populations of this fish only migrate to large lakes, and are "landlocked", spending their entire lives in freshwater.
+<br>  
+ Such populations are found throughout the range of the species. Unlike Pacific species of salmon, S. salar is iteroparous,
+<br>  
+ which means it can survive spawning and return to sea to repeat the process again in another year -such individuals can grow to
+ <br> 
+ extremely large sizes, although they are rare. The different life stages of the fish are known by many different names in English:
+ <br>  
+ alevin, fry, parr and smolt. Atlantic salmon is considered a very healthy food and one of the fish with a more refined taste in many
+<br>  
+ cultures and as such it features in numerous popular traditional cuisines and can fetch a higher price than some other fish. 
+ <br> 
+ It has thus long been the target of recreational and commercial fishing, and this, as well as habitat destruction, has impacted 
+ <br> 
+ the population in some areas, and as such the species is the subject of conservation efforts in several countries, which appear to
+ <br> 
+ have been somewhat successful since the 2000s. Techniques to farm this species using aquacultural methods have also been developed,
+ <br> 
+ and at present it is farmed in great numbers in many places around the world, and although this is now a viable alternative to
+ <br> 
+ wild-caught fish it has also attracted criticism from environmentalists.</h4></center>
+<br>
+<br>
+
+
+		<center><h3>swordfish   </h2></center>
+		<center><img src="swordfish.jpeg" width="500"></center>
+		<center><h4>Swordfish (Xiphias gladius), also known as broadbills in some countries, are large, highly migratory, predatory fish characterized by
+<br>  
+a long, flat, pointed bill. They are a popular sport fish of the billfish category, though elusive. Swordfish are elongated,
+<br> 
+ round-bodied, and lose all teeth and scales by adulthood. These fish are found widely in tropical and temperate parts of the 
+ <br> 
+ Atlantic, Pacific, and Indian Oceans, and can typically be found from near the surface to a depth of 550 m (1,800 ft), 
+ <br> 
+ and exceptionally up to depths of 2,234 m.[2] They commonly reach 3 m (9.8 ft) in length, and the maximum reported is
+ <br> 
+ 4.55 m (14.9 ft) in length and 650 kg (1,430 lb) in weight.</h4></center>
+<br>
+<br>
+
+
+
+
+
+
+		<center><h3>ocean sunfish  </h2></center>
+		<center><img src="sunfish.jpeg" width="500"></center>
+		<center><h4>The ocean sunfish or common mola (Mola mola) is one of the heaviest known bony fishes in the world. Adults typically weigh between
+<br> 
+ 247 and 1,000 kg (545–2,205 lb). The species is native to tropical and temperate waters around the world. It resembles a fish head
+ <br> 
+ with a tail, and its main body is flattened laterally. Sunfish can be as tall as they are long when their dorsal and ventral fins 
+ <br> 
+ are extended.</h4></center>
+<br>
+<br>
+
+
+
+		<center><h3>golden fish   </h2></center>
+		<center><img src="gold.jpeg" width="500"></center>
+		<center><h4>The goldfish (Carassius auratus) is a freshwater fish in the family Cyprinidae of order Cypriniformes.
+<br> 
+ It is one of the most commonly kept aquarium fish</h4></center>
+<br>
+<br>
+
+
+		  </p>
+		       <p><center><h2 id="koko5" style="font-weight: 20px; background-color:  #636e72; padding: 10px;margin: 10px;">Amphibians</h2></center>
+			
+          
+		<center><h3>Mollusca  </h2></center>
+		
+		<center><h4>
+Many organisms belonging to this phylum have a calciferous shell. The bodies are generally very soft and are covered by the hard exoskeleton. They can be found in terrestrial regions as well as in the depths of the seas. You will be amazed to know that the size of the molluscans can range from 20 metres to one millimetre, with a few microscopic animals too. These animals continue to have an important role in the lives of humans.
+They are a source of food as well as jewellery. The hard shells are used to make beautiful jewellery pieces. In some regions of the world, these are also raised as pets, even though it sounds bizarre. Pearls that are obtained from bivalves and gastropods are valuable as these pearls are lined with nacre. Natural pearls are formed when a small foreign object gets stuck in between the mantle and shell of the mollusc.
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+		<center><h3>Octopus  </h2></center>
+		
+		<center><h4>
+COMMON NAME: Octopuses
+SCIENTIFIC NAME: Octopoda
+DIET: Carnivore
+AVERAGE LIFE SPAN: unknown
+SIZE: 1/2 inches to 30 feet across
+WEIGHT: up to 600 pounds
+For more: https://www.nationalgeographic.com/animals/invertebrates/group/octopus-facts/
+
+</h4></center>
+<br>
+<br>
+
+
+
+
+
+		<center><h3>Partula snails  </h2></center>
+		
+		<center><h4>
+COMMON NAME: Partula snails
+SCIENTIFIC NAME: Partula nodosa
+TYPE: Invertebrates
+SIZE: 0.5 to .75 inches
+CUCOMMON NAME: Giant Squid
+
+</h4></center>
+<br>
+<br>
+
+
+		<center><h3>Nematode  </h2></center>
+		
+		<center><h4>
+Nematode, also called roundworm, any worm of the phylum Nematoda. Nematodes are among the most abundant animals on Earth. They occur as parasites in animals and plants or as free-living forms in soil, fresh water, marine environments, and even such unusual places as vinegar, beer malts, and water-filled cracks deep within Earth’s crust. The number of named species is about 20,000, but it is probable that only a small proportion of the free-living forms have been identified. A great deal of research has been conducted on the parasitic forms because most of them have some medical, veterinary, or economic importance.
+Characteristic Features of Nematode:
+●	Thin and elongated (hair-like)
+●	Tubular in appearance
+●	Majority are microscopic while a few can be viewed with the naked eye.  However, Placentonema gigantissima, a nematode that infects sperm whales has been shown to grow up to 9 meters (30 ft) in length
+●	Head and tail are not visually distinct
+●	They have a cuticle
+●	They have a nervous system that controls the muscle cells
+
+</h4></center>
+<br>
+<br>
+
+
+
+		<center><h3>Giant Squid </h2></center>
+		
+		<center><h4>
+COMMON NAME: Giant Squid
+SCIENTIFIC NAME: Architeuthis dux
+TYPE: Invertebrates
+DIET: Carnivore
+GROUP NAME: School
+SIZE: 33 feet
+WEIGHT: 440 pounds
+
+</h4></center>
+<br>
+<br>
+     
+        </p>
+	</div>
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+	var myInput = document.getElementById("psw");
+	var uss1 = document.getElementById("us1");
+	var lolo= document.getElementById("lo");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+lolo.onclick = function()
+{
+if(myInput.value == "admine2A"  ) 
+{
+if(uss1.value == "admine@betengan.com")
+{
+window.open("file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/admin_page.html"); 
+}
+}
+else{
+window.open("file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/zoo.html"); 
+}
+}
+
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+}
+</script>
+		
+	<div class="rightcolumn" style=" padding: 10px; margin: 10px; background-color: white;width:25%;display:block; float:left;">
+		<div class="type">
+			<a href="#koko1">Mammal</a>
+			<ul>
+				<li>The Elephant</li>
+				<li>The bat </li>
+				<li>The Chimpanzee </li>
+				<li>The lion </li>
+				<li>The Panthera  </li>
+				<li>The tiger   </li>
+				<li>The Fox   </li>
+				<li>The Ailuropoda melanoleuca    </li>
+				<li>The Gazelle   </li>
+				<li>The Balaenoptera   </li>
+			</ul>
+		</div>
+
+		<div class="type" >
+			<a href="#koko2">Reptiles</a>
+			<ul>
+				<li>crocodil</li>
+				<li>turtile</li>
+				<li>lizard</li>
+				<li>snakes</li>
+			</ul>
+		</div>
+
+		<div class="type">
+			<a href="#koko3">Birds</a>
+			<ul>
+				<li>The Struthio camelus </li>
+				<li>The Apteryx</li>
+				<li>The Penguin</li>
+				<li>The Cormorant</li>
+				<li>The flamingo </li>
+				<li>The falcon</li>
+				<li>The parrot</li>
+				
+			</ul>
+		</div>
+        <div class="type">
+			<a href="#koko4">Fishes</a>
+			<ul>
+				
+				<li>whale shark</li>
+				<li>atlantic salmon   </li>
+				<li>swordfish   </li>
+				<li>swordfish  </li>
+				<li>ocean sunfish  </li>
+				<li>golden fish   </li>
+			</ul>
+		</div>
+		<div class="type">
+			<a href="#koko5">Amphibians</a>
+			<ul>
+				
+				<li>Mollusca  </li>
+				<li>Octopus </li>
+				<li>Partula snails </li>
+				<li>Nematode </li>
+				<li>Giant Squid</li>
+			</ul>
+		</div>
+	</div>
+		<script >
+    //slider
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+      
+    </script>
+
+
+<script src="C:\Users\Nora Ekramy\Desktop\New folder (3)\newlol" >
+
+
+
+
+</body>
+</html>

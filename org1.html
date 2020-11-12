@@ -1,0 +1,598 @@
+﻿<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="description" content=" Welcome !">
+        <link rel="stylesheet" href="in.css" />
+        <link rel="stylesheet" href="normalize.css">
+        <script src="in.js"></script>
+        <title>Organizations
+		
+		</title>
+    </head>
+
+<style>
+ *
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #fef9e7;
+    height: 2000px;
+	
+}
+.main-nav
+{
+    background-color:dimgray;
+    overflow : hidden;
+}
+
+
+		
+	
+.main-nav a
+{
+
+			font-family: "Inconsolata", sans-serif;
+    color:lavenderblush;
+    float: left;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-style: italic;
+    
+
+}
+.main-nav a:hover
+{
+    background-color: rgb(179, 243, 195);
+    color: rgb(24, 26, 25);
+    
+}
+
+.org-navbar
+{
+    overflow: hidden;
+    background-color: #C69E3B;
+    
+}
+.org-navbar h2
+{
+    color: honeydew;
+    margin: 5px;
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+    font-size: 100px;
+}
+.content
+{
+    min-width: 1000px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color:white;
+    height: 4000px;
+}
+.content .v-tabs
+{
+    float: left;
+    border:none;
+    width: 200px;
+    height: auto;
+    margin-bottom: none;
+    padding-bottom: none;
+    color: rgb(68, 67, 67);
+    
+}
+.content .v-tabs button
+{
+    display: block;
+    background-color:gray;
+    padding: 10px 7px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+.content .v-tabs button .active
+{
+   background-color: goldenrod;
+   margin-bottom: none;
+    padding-bottom: none;
+}
+.content .tabcontent
+{
+    float: left;
+    padding: 10px 40px;
+    margin: 20px;
+    border: 1px solid darkslategray;
+    width: 78.5%;
+   
+    height: 300px;
+}
+
+.end h5
+{
+    background-color: #C69E3B;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+     /* navbar*/
+ nav{
+  background: grey;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding:0 60px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #7C9864;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1326px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 1326px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+ .checkbtn{
+font-size: s30px;
+color: white;
+float: right; 
+line- height: 80 px;
+margin-right : 40px;
+cursor : pointer;
+}
+
+@media (max-width: 1326px) {
+.checkbtn{
+display:block;
+}
+} 
+
+</style>
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <body>
+       
+                                 <!-- navbar-->
+  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Online ZOO </label> 
+       <ul class="nav-area">
+            <li> <a class= "zoo" href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/zoo.html">Zoo</a> </li>
+          
+         <li> <a  class = "org"  href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/org%20(1).html">Organizations</a></li>
+           <li> <a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/Nature%20Reserves%20(1).html">Nature Reserve</a>  </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/contactus%20(1).html">Contact Us</a> </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/aboutus.html">About Us</a></li>
+             <li><button class="signin"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> sign in</button></li>
+           
+    </ul> 
+  </nav>
+      <div class="org-navbar">
+          <h2>Organizations</h2>
+      </div>
+      <div class="content">
+          <div class="v-tabs">
+              <button class="tablinks" onclick="Opentab(event, 'ASPCA' )">ASPCA</button>
+          </div>
+          <div id="ASPCA" class="tabcontent">
+              <h2>ASPCA</h2>
+              <h3>The American Society for the Prevention of Cruelty to Animals (ASPCA) 
+                  is a non-profit organization dedicated to preventing cruelty to animals. 
+                  Based in New York City since its inception in 1866, the organization's mission is
+                   "to provide effective means for the prevention of cruelty to animals throughout the United States.
+                </h3>
+                
+                <br/>
+                <p>For read more about this organization. 
+                    <a href="https://en.wikipedia.org/wiki/American_Society_for_the_Prevention_of_Cruelty_to_Animals">Here</a>
+                </p>
+                                     
+          </div>
+
+          <div class="v-tabs">
+           
+            <button class="tablinks" onclick="Opentab(event, 'Animal Aid' )" id="defaultOpen">Animal Aid</button>
+         
+        </div>
+
+          <div id="Animal Aid" class="tabcontent">
+              <h2>Animal Aid</h2>
+              <h3>Animal Aid is a British animal rights organisation, founded in 1977 by Jean Pink.
+                   The group campaigns peacefully against all forms of animal abuse—including the consumption of animals as food 
+                   and their use for medical research—and promotes a cruelty-free lifestyle. It also investigates and exposes animal cruelty.
+                   Animal Aid conducts undercover investigations, produces campaign reports, leaflets and fact files, 
+                   as well as educational videos and other resources. They also offer a quarterly magazine and
+                    a sales catalogue with cruelty-free products.
+              </h3>
+            
+              <p>For read more about this organization. 
+                  <a href="https://en.wikipedia.org/wiki/Animal_Aid">Here</a>
+              </p>
+                                   
+        </div>
+      
+
+      <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Animal Defense League' )">Animal Defense League</button>
+     
+    </div>
+
+      <div id="Animal Defense League" class="tabcontent">
+          <h2>Animal Defense League</h2>
+          <h3>The Animal Defense League (ADL) is an internationally active grassroots animal rights organization,
+               fighting to end animal exploitation and abuse. Working under the same banner, 
+               the coalition of activists and supporters that make up the various ADL
+                chapters are able to have a stronger effect in their campaigns and fight together towards
+                 the collective goal of animal liberation.
+          </h3>
+           <br/>
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Animal_Defense_League">Here</a>
+          </p>
+                               
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Animal Ethics' )">Animal Ethics</button>
+     
+    </div>
+
+      <div id="Animal Ethics" class="tabcontent">
+          <h2>Animal Ethics</h2>
+          <h3>Animal Ethics is a nonprofit organization formed to promote discussion and debate around issues in animal ethics
+               and to provide information and resources for animal advocates. They also do outreach work in several countries
+                on the issue of speciesism. Their aim is to create a world where moral consideration is extended to all sentient beings.
+                 The organization's website covers topics such as speciesism, sentience, veganism and wild animal suffering
+                  and has content translated into several languages.
+          </h3>
+           <br/>
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Animal_Ethics_(organization)">Here</a>
+          </p>
+                               
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Animal Outlook' )">Animal Outlook</button>
+     
+    </div>
+
+      <div id="Animal Outlook" class="tabcontent">
+          <h2> Animal Outlook</h2>
+          <h3>Animal Outlook, formerly known as Compassion Over Killing (COK), is a nonprofit animal advocacy organization based in Washington,
+               D.C., led by President Erica Meier. Formed in 1995, as a high school club, their primary campaigns are to advocate
+                against factory farming and promote vegetarian eating. While the group welcomes those who are interested 
+                in animal welfare who eat meat, it encourages a transition to a plant-based diet, even if gradual or part-time.
+          </h3>
+           <br/>
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Animal_Outlook">Here</a>
+          </p>
+                               
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'AnimaNaturalis' )">AnimaNaturalis</button>
+     
+    </div>
+
+      <div id="AnimaNaturalis" class="tabcontent">
+          <h2> AnimaNaturalis</h2>
+          <h3>AnimaNaturalis is an international non profit animal rights organization whose mission is to "Establish,
+               promote and protect the rights of all animals in Spain and Latin America. These rights include the right to life, liberty,
+                and not to be tortured stop being considered property." It was founded in March, 2003 by Leonora Esquivel Frías and
+                 Francisco Vásquez Neira.
+
+            AnimaNaturalis has offices in Spain, as well as several Latin American countries (Argentina, Chile, Colombia, Ecuador, Mexico, and Venezuela).
+          </h3>
+           <br/>
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/AnimaNaturalis">Here</a>
+          </p>
+                               
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'CAFT' )">CAFT</button>
+     
+    </div>
+
+      <div id="CAFT" class="tabcontent">
+          <h2> CAFT</h2>
+          <h3>The Coalition to Abolish the Fur Trade (CAFT) is an informal international coalition of grassroots groups
+               that campaign against the production and use of animal fur for clothing and other items. 
+               It started in the USA in the 1990s, when fur farms were being raided quite regularly.
+          </h3>
+           <br/>
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Coalition_to_Abolish_the_Fur_Trade">Here</a>
+          </p>
+                               
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'DxE' )">DxE</button>
+     
+    </div>
+
+      <div id="DxE" class="tabcontent">
+          <h2> DxE</h2>
+          <h3>Direct Action Everywhere (DxE) is an international grassroots network of animal rights activists
+               founded in 2013 in the San Francisco Bay Area. DxE uses disruptive protests and non-violent direct action tactics,
+                such as open rescue of animals from factory farms. Their intent is to build a movement that can eventually 
+                shift culture and change social and political institutions. DxE activists work to "put an end to the commodity
+                 status of animals."
+          </h3>
+           <br/>
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Direct_Action_Everywhere">Here</a>
+          </p>
+                               
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Equanimal' )">Equanimal</button>
+     
+    </div>
+
+      <div id="Equanimal" class="tabcontent">
+          <h2> Equanimal</h2>
+          <h3>Equanimal is a Spanish non profit animal rights organization. Comes from the fusion in 2006 of "Alternativa
+               para la Liberación Animal" (Spanish:"Alternative for Animal Liberation") (ALA, 1986) and "Derechos para los Animales"
+                (Spanish: "Rights for Animals") (2002).
+
+            They focus on anything they consider against animal exploitation, such as animal testing,
+             fur farms and the use of fur as clothing,the abandonment of animals, circuses that use animals and zoos,
+              hunting and fishing or bullfighting.
+            
+            The methods they use are mainly awareness through media campaigns, protest acts in public places such as embassies,
+             demonstrations and sometimes open rescues. ....
+            
+  
+          </h3>
+           
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Equanimal">Here</a>
+          </p>
+                               
+    </div>
+
+    
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'FARM' )">FARM</button>
+     
+    </div>
+
+      <div id="FARM" class="tabcontent">
+          <h2> FARM</h2>
+          <h3>Farm Animal Rights Movement (FARM) is an international nonprofit organization working to promote
+               a vegan lifestyle and animal rights through public education and grass roots outreach.
+                It operates ten national and international programs from its headquarters in Bethesda, Maryland.
+
+            FARM has the abolitionist vision of a world where animals are free 
+            from all forms of human exploitation, including, food and clothing, research and testing
+            , entertainment and hunting. FARM's mission is to spare the largest number of animals from being bred, abused, 
+           and slaughtered for food, as this accounts for 98% of all animal abuse and slaughter. ...
+            
+  
+          </h3>
+           
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Farm_Animal_Rights_Movement">Here</a>
+          </p>
+                               
+    </div>
+
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Friends of Animals' )">Friends of Animals</button>
+     
+    </div>
+
+      <div id="Friends of Animals" class="tabcontent">
+          <h2> Friends of Animals</h2>
+          <h3>Friends of Animals (FoA) is a non-profit international animal advocacy organization,
+               established in New York City in 1957, working to free animals around the world from cruelty
+                and institutionalized exploitation.The organization's headquarters is in Darien, Connecticut,
+                 with an additional office in Colorado.
+          </h3>
+           
+          <p>For read more about this organization. 
+              <a href="https://en.wikipedia.org/wiki/Friends_of_Animals">Here</a>
+          </p>
+                               
+    </div>
+
+    
+      </div>
+      <div class="end">
+        <h5>The End</h5>
+    </div>
+      <header>
+		<h1 style="background-color: goldenrod; width: 420px; border-radius: 5px; text-align: center;" >change background color</h1>
+			<input id="pop1" type="button" value="brown" />
+            <input id="pop2" type="button"  value="purple"  />
+            <input id="pop3" type="button" value="dimgray"  /> 
+            <input id="pop4" type="button" value="darkgreen"  />
+
+		<h1 style="background-color: goldenrod; width: 420px; border-radius: 5px; text-align: center;">change text color</h1>
+        
+            <button id="pop5"  value="red" />
+            <button id="pop6"   value="white"  />
+            <button id="pop7"   value="blue" />			
+			<button id="pop8"   value="black" />
+			
+</header>
+			
+			<div id="Text">
+        <h1 >About the admins  </h1>
+          <ul>
+              <li>they can change background color by pressing the button at the button which with color they want. </li>
+              <li>they can change text color whith color they want. </li>
+			  <li> they love care for animals very much. </li>
+           </ul>
+           </div>
+		   <script> 
+		   
+		     function changecolor(color) { document.bgColor=color; } 
+  function change_textcolor(color) { document.getElementById("Text").style.color=color; }
+  
+		   var poop1 = document.getElementById("pop1");
+		   var poop2 = document.getElementById("pop2");
+		   var poop3 = document.getElementById("pop3");
+		   var poop4 = document.getElementById("pop4");
+		   var poop5 = document.getElementById("pop5");
+		   var poop6 = document.getElementById("pop6");
+		   var poop7 = document.getElementById("pop7");
+		   var poop8 = document.getElementById("pop8");
+		   
+		   
+poop1.onclick = function()
+{
+changecolor('purple');
+}
+poop2.onclick = function()
+{
+changecolor('purple');
+
+}
+poop3.onclick = function()
+{
+changecolor('dimgray');
+
+}
+poop4.onclick = function()
+{
+
+changecolor('darkgreen');
+}
+poop5.onclick = function()
+{
+
+changecolor('red');
+}
+poop6.onclick = function()
+{
+changecolor('white');
+
+}
+poop7.onclick = function()
+{
+changecolor('blue');
+
+}
+poop8.onclick = function()
+{
+changecolor('black');
+
+}
+		  
+
+		  
+		  
+        </script> 
+		
+		<div style="margin:22% 44%">
+            <a style="font-size:20px" href="zoo.html">zoo</a>   
+            <a style="font-size:20px" href="aboutus.html">about us</a>
+        </div>
+<script src="C:\Users\Nora Ekramy\Desktop\New folder (3)\newlol" >
+    </body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="description" content=" Welcome !">
+        <link rel="stylesheet" href="inin.css" />
+        <link rel="stylesheet" href="normalize.css">
+        <script src="inin.js"></script>
+        <title>Nature Reserves</title>
+
+        <style>
+            *
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #fef9e7;
+    height: 2000px;
+}
+.main-nav
+{
+    background-color:dimgray;
+    overflow : hidden;
+}
+
+
+.main-nav a
+{
+ 
+font-family: "Inconsolata", sans-serif;
+ color:lavenderblush;
+    float: left;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-style: italic;
+    
+
+}
+.main-nav a:hover
+{
+    background-color: rgb(179, 243, 195);
+    color: rgb(24, 26, 25);
+    
+}
+
+.nature-navbar
+{
+    overflow: hidden;
+    background-color: #C69E3B;
+    
+}
+.nature-navbar h2
+{
+    color: honeydew;
+    margin: 5px;
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+    font-size: 100px;
+}
+.content
+{
+    min-width: 1000px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color:white;
+    height: 5500px;
+}
+.content .v-tabs
+{
+    float: left;
+    border:none;
+    width: 200px;
+    height: auto;
+    margin-bottom: none;
+    padding-bottom: none;
+    color: rgb(68, 67, 67);
+    
+}
+.content .v-tabs button
+{
+    display: block;
+    background-color:gray;
+    padding: 10px 7px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+.content .v-tabs button .active
+{
+   background-color: goldenrod;
+   margin-bottom: none;
+    padding-bottom: none;
+}
+.content .tabcontent
+{
+    float: left;
+    padding: 10px 40px;
+    margin: 20px;
+    border: 1px solid darkslategray;
+    width: 78.5%;
+    
+    height: 500px;
+}
+.content .tabcontent .lewa
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .gran
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .Zhan
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .APR
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .TR
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .FJ
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .bia
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .agbr
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .gi
+{
+    width: 500px;
+    height: 250px;
+}
+.content .tabcontent .ngnp
+{
+    width: 500px;
+    height: 250px;
+}
+.end h5
+{
+    background-color: #C69E3B;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+     /* navbar*/
+ nav{
+  background: grey;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding:0 60px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #7C9864;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1326px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 1326px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+ .checkbtn{
+font-size: s30px;
+color: white;
+float: right; 
+line- height: 80 px;
+margin-right : 40px;
+cursor : pointer;
+}
+
+@media (max-width: 1326px) {
+.checkbtn{
+display:block;
+}
+} 
+
+        </style>
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <body>
+       
+                                 <!-- navbar-->
+  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Online ZOO </label> 
+       <ul class="nav-area">
+             <li> <a class= "zoo" href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/zoo.html">Zoo</a> </li>
+          
+         <li> <a  class = "org"  href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/org%20(1).html">Organizations</a></li>
+           <li> <a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/Nature%20Reserves%20(1).html">Nature Reserve</a>  </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/contactus%20(1).html">Contact Us</a> </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/aboutus.html">About Us</a></li>
+             <li><button class="signin"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> sign in</button></li>
+           
+    </ul> 
+  </nav>
+      <div class="nature-navbar">
+          <h2>Nature Reserves</h2>
+      </div>
+      <div class="content">
+          <div class="v-tabs">
+              <button class="tablinks" onclick="Opentab(event, 'Lewa Wildlife Conservancy' )">Lewa Wildlife Conservancy</button>
+          </div>
+          <div id="Lewa Wildlife Conservancy" class="tabcontent">
+              <h2>Lewa Wildlife Conservancy</h2>
+              <img src="lewa.jpg" alt="Lewa Wildlife Conservancy" class="lewa">
+              <h3>It is the sanctuary of the African black rhinoceros, and it is one of Kenya’s most important reserves.
+                   Over the years, thanks to conservation and protection policies, 
+                   the population of black rhinos has increased by 6 per cent.
+                    The park is also home to the largest population of Grévy’s zebras (380 individuals), 
+                    of which there are 3,000 globally.
+               </h3>                 
+          </div>
+
+          <div class="v-tabs">
+           
+            <button class="tablinks" onclick="Opentab(event, 'Gran Paradiso National Park ' )" id="defaultOpen">Gran Paradiso National Park </button>
+         
+        </div>
+
+          <div id="Gran Paradiso National Park " class="tabcontent">
+              <h2>Gran Paradiso National Park </h2>
+              <img src="gran.jpg" alt="Gran Paradiso National Park" class="gran">
+              <h3>According to the IUCN, it is one of the world’s most important protected areas. 
+                  It is Italy’s oldest park, established in 1922 (along with the National Park of Abruzzo). 
+                  Its iconic animal is the ibex, but mountains chamois, marmots and eagles can also be admired.
+              </h3>                
+        </div>
+      
+
+      <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Zhangjiajie National Park' )">Zhangjiajie National Park</button>
+     
+    </div>
+
+      <div id="Zhangjiajie National Park" class="tabcontent">
+          <h2>Zhangjiajie National Park</h2>
+          <img src="Zhan.jpg" alt="Zhangjiajie National Park" class="Zhan">
+          <h3>It is one of China’s most famous parks, and it is widely known all over 
+              the world for its stunning landscapes. It is a UNESCO World Heritage Site 
+              and has inspired many painters, poets and directors, including James Cameron. 
+              In fact, Pandora’s peaks take inspiration from these mountains.
+          </h3>            
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'American Praire Reserve' )">American Praire Reserve</button>
+     
+    </div>
+
+      <div id="American Praire Reserve" class="tabcontent">
+          <h2>American Praire Reserve</h2>
+          <img src="APR.jpg" alt="American Praire Reserve" class="APR">
+          <h3>Animal Ethics is a nonprofit organization formed to promote discussion and debate around issues in animal ethics
+               and to provide information and resources for animal advocates. They also do outreach work in several countries
+                on the issue of speciesism. Their aim is to create a world where moral consideration is extended to all sentient beings.
+                 The organization's website covers topics such as speciesism, sentience, veganism and wild animal suffering
+                  and has content translated into several languages.
+          </h3>             
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Tchindzoulou Island' )">Tchindzoulou Island</button>
+     
+    </div>
+
+      <div id="Tchindzoulou Island" class="tabcontent">
+          <h2> Tchindzoulou Island</h2>
+          <img src="TR.jpg" alt="Tchindzoulou Island" class="TR">
+          <h3>The rehabilitation centre founded by Jane Goodall has already turned twenty.
+               It is a sanctuary for chimpanzees, home to 150 individuals, many of which are orphans.
+                Visiting the centre means having a direct contact with the crucial labour carried out 
+                by the ethologist over the years, a landmark for primates conservation all over the world.
+          </h3>
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Fjallabak Nature Reserve' )">Fjallabak Nature Reserve</button>
+     
+    </div>
+
+      <div id="Fjallabak Nature Reserve" class="tabcontent">
+          <h2> Fjallabak Nature Reserve</h2>
+          <img src="FJ.jpg" alt=" Fjallabak Nature Reserve" class="FJ">
+          <h3>Iceland’s landscape is wild, ancient, and noble. The region is named after the numerous peaks
+               and its modelled and coloured landscapes. The reserve is home to hundreds of vegetable species.
+            </h3>         
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Białowieża Forest' )">Białowieża Forest</button>
+     
+    </div>
+
+      <div id="Białowieża Forest" class="tabcontent">
+          <h2> Białowieża Forest</h2>
+          <img src="bia.jpg" alt="Białowieża Forest" class="bia">
+          <h3>It is the last large European forest. It is thousands year old, ancient, 
+              and home to vegetable and animals species that are already extinct in the rest of the old continent.
+               The forest extends between north-east Poland and Belorussia. It is home to centuries-old trees 
+               and European bison, wolves, moose and beavers.
+          </h3>       
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'The Australian Great Barrier Reef' )">The Australian Great Barrier Reef</button>
+     
+    </div>
+
+      <div id="The Australian Great Barrier Reef" class="tabcontent">
+          <h2>The Australian Great Barrier Reef</h2>
+          <img src="agbr.jpg" alt="The Australian Great Barrier Reef" class="agbr">
+          <h3>It is the world’s largest marine reserve. 2,600 kilometres long,
+               it extends for over 340,000 square kilometres. It is a World Heritage Site,
+                and is home and shelter to thousands of animal and vegetable species.
+                 Despite climate change is affecting this Pacific Ocean area, it remains a real ark of biodiversity.
+          </h3>   
+    </div>
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Gorgona Island' )">Gorgona Island</button>
+     
+    </div>
+
+      <div id="Gorgona Island" class="tabcontent">
+          <h2> Gorgona Island</h2>
+          <img src="gi.jpg" alt="Gorgona Island" class="gi">
+          <h3>Twenty kilometres off the Colombian coast, in the Pacific Ocean,
+               this island was declared a protected reserve in 1985. Formerly inhabited by pre-Colombian civilisations,
+                today it remains uninhabited. People can visit it only by booking through the Colombian tourist office.
+                 It is a tropical island, exactly like the first places visited by Spanish conquistadores.
+          </h3>            
+    </div>
+
+    
+
+    <div class="v-tabs">
+           
+        <button class="tablinks" onclick="Opentab(event, 'Northeast Greenland National Park' )">Northeast Greenland National Park</button>
+     
+    </div>
+
+      <div id="Northeast Greenland National Park" class="tabcontent">
+          <h2> Northeast Greenland National Park</h2>
+          <img src="ngnp.jpg" alt="Northeast Greenland National Park" class="ngnp">
+          <h3>It is the world’s largest nature reserve with 900,000 square kilometres, most of them covered by perennial ice.
+               It is inhabited by the Inuit, ancient inhabitants of this harsh land. The link with nature is still deep andancestral, 
+               and the only way to survive.
+          </h3>           
+    </div>
+
+
+      </div>
+      <div class="end">
+        <h5>The End</h5>
+    </div>
+      <header>
+		<h1 style="background-color: goldenrod; width: 420px; border-radius: 5px; text-align: center;" >change background color</h1>
+			<input id="pop1" type="button" value="brown" />
+            <input id="pop2" type="button"  value="purple"  />
+            <input id="pop3" type="button" value="dimgray"  /> 
+            <input id="pop4" type="button" value="darkgreen"  />
+
+		<h1 style="background-color: goldenrod; width: 420px; border-radius: 5px; text-align: center;">change text color</h1>
+        
+            <button id="pop5"  value="red" />
+            <button id="pop6"   value="white"  />
+            <button id="pop7"   value="blue" />			
+			<button id="pop8"   value="black" />
+			
+</header>
+			
+			<div id="Text">
+        <h1 >About the admins  </h1>
+          <ul>
+              <li>they can change background color by pressing the button at the button which with color they want. </li>
+              <li>they can change text color whith color they want. </li>
+			  <li> they love care for animals very much. </li>
+           </ul>
+           </div>
+		   <script> 
+		   
+		     function changecolor(color) { document.bgColor=color; } 
+  function change_textcolor(color) { document.getElementById("Text").style.color=color; }
+  
+		   var poop1 = document.getElementById("pop1");
+		   var poop2 = document.getElementById("pop2");
+		   var poop3 = document.getElementById("pop3");
+		   var poop4 = document.getElementById("pop4");
+		   var poop5 = document.getElementById("pop5");
+		   var poop6 = document.getElementById("pop6");
+		   var poop7 = document.getElementById("pop7");
+		   var poop8 = document.getElementById("pop8");
+		   
+		   
+poop1.onclick = function()
+{
+changecolor('purple');
+}
+poop2.onclick = function()
+{
+changecolor('purple');
+
+}
+poop3.onclick = function()
+{
+changecolor('dimgray');
+
+}
+poop4.onclick = function()
+{
+
+changecolor('darkgreen');
+}
+poop5.onclick = function()
+{
+
+changecolor('red');
+}
+poop6.onclick = function()
+{
+changecolor('white');
+
+}
+poop7.onclick = function()
+{
+changecolor('blue');
+
+}
+poop8.onclick = function()
+{
+changecolor('black');
+
+}
+		  
+
+		  
+		  
+        </script> 
+		
+		<div style="margin:22% 44%">
+            <a style="font-size:20px" href="zoo.html">zoo</a>   
+            <a style="font-size:20px" href="aboutus.html">about us</a>
+        </div>
+<script src="C:\Users\Nora Ekramy\Desktop\New folder (3)\newlol" >
+    </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="description" content=" Welcome !">
+        <link rel="stylesheet" href="aboutus.css" />
+        <link rel="stylesheet" href="normalize.css">
+        <script src="in.js"></script>
+        <title>About Us </title>
+    </head>
+
+    <style>
+        html
+{
+    box-sizing: inherit;
+}
+.about-part
+{
+   background-color: dimgrey;
+   color: ghostwhite;
+   text-align: center;
+   font-style: italic;
+   padding: 10px;
+   font-size: 40px;
+}
+
+.tit
+{
+    background-color: #C69E3B;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    color: ghostwhite;
+}
+.container
+{
+    min-width: 1000px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color:white;
+    height: 430px;;
+}
+.container .cont
+{
+    border: 1px solid green;
+    border-top: none;
+    width: 1100px;
+    height: 425px;
+    padding: 10px;
+    position: absolute;
+    left: 9.5%;
+}
+.container .cont .mem1
+{
+   overflow: hidden;
+   float: left;
+   border:1.5px solid olivedrab;
+   width: 200px;
+   height: 100px;
+   margin: 30px;
+   margin-left: 100px;
+   padding: 20px;
+   background-color: rgb(222, 241, 183);
+}
+.container .cont .mem2
+{
+   overflow: hidden;
+   float: left;
+   border:1.5px solid olivedrab;
+   width: 200px;
+   height: 100px;
+   margin: 30px;
+   padding: 20px;
+   background-color: rgb(222, 241, 183);
+}
+.container .cont .mem3
+{
+   overflow: hidden;
+   float: left;
+   border:1.5px solid olivedrab;
+   width: 200px;
+   height: 100px;
+   margin: 30px;
+   padding: 20px;
+   background-color: rgb(222, 241, 183);
+}
+.container .cont .mem4
+{
+   overflow: hidden;
+   float: left;
+   border:1.5px solid olivedrab;
+   width: 200px;
+   height: 100px;
+   margin: 20px;
+   margin-left: 255px;
+   padding: 20px;
+   background-color: rgb(222, 241, 183);
+}
+.container .cont .mem5
+{
+   overflow: hidden;
+   float: left;
+   border:1.5px solid olivedrab;
+   width: 200px;
+   height: 100px;
+   margin: 20px;
+   padding: 20px;
+   background-color: rgb(222, 241, 183);
+}
+footer
+{
+    background-color: #C69E3B;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-nav
+{
+    background-color:dimgray;
+    overflow : hidden;
+}
+
+
+.main-nav a
+{
+ 
+font-family: "Inconsolata", sans-serif;
+ color:lavenderblush;
+    float: left;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-style: italic;
+    
+
+}
+.main-nav a:hover
+{
+    background-color: rgb(179, 243, 195);
+    color: rgb(24, 26, 25);
+    
+}
+
+
+
+     /* navbar*/
+ nav{
+  background: grey;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding:0 60px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #7C9864;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1326px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 1326px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+ .checkbtn{
+font-size: s30px;
+color: white;
+float: right; 
+line- height: 80 px;
+margin-right : 40px;
+cursor : pointer;
+}
+
+@media (max-width: 1326px) {
+.checkbtn{
+display:block;
+}
+} 
+
+    </style>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <body>
+                           <!-- navbar-->
+  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Online ZOO </label> 
+       <ul class="nav-area">
+            <li> <a class= "zoo" href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/zoo.html">Zoo</a> </li>
+          
+         <li> <a  class = "org"  href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/org%20(1).html">Organizations</a></li>
+           <li> <a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/Nature%20Reserves%20(1).html">Nature Reserve</a>  </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/contactus%20(1).html">Contact Us</a> </li>
+            <li><a href="file:///C:/Users/Nora%20Ekramy/Desktop/New%20folder%20(3)/aboutus.html">About Us</a></li>
+           
+    </ul> 
+  </nav>
+  
+        <div class="about-part">
+            <h1>About Us</h1>
+            <p>We are a team of 5 students.
+                We study at the Faculty of Computers and 
+                Information Science. We built this website
+                as an application to the summer training 
+                for the first year students general department.
+            </p>
+        </div>
+
+        <h2 class="tit">Our Team</h2>
+        <div class="container">
+          <div class="cont">
+           <div class="mem1">
+            <h3>Nora Ekramy</h3>
+            <p>Nora@gmail.com</p>
+           </div>
+           <div class="mem2">
+            <h3>Nada Mohammed</h3>
+            <p>Nada@gmail.com</p>
+           </div>
+           <div class="mem3">
+            <h3>Mariam Abdelrehem</h3>
+            <p>Mariam@gmail.com</p>
+           </div>
+           <div class="mem4">
+            <h3>Nourhan Mahmoud</h3>
+            <p>Nourhan@gmail.com</p>
+           </div>
+           <div class="mem5">
+            <h3>Hager Salim</h3>
+            <p>Hager@gmail.com</p>
+           </div> 
+         </div>
+        </div>
+
+        <footer class="end">
+            <h3>Online Zoo © 2020</h3>
+        </footer>
+    </body>
+</html>
